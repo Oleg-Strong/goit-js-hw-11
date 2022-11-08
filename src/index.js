@@ -7,7 +7,7 @@ import {
   alertEndOfSearch,
   alertImagesFound,
 } from './utilities-js/alert';
-import { pageScrolling } from './utilities-js/scroll';
+import { pageScrolling, pageScrollingUP } from './utilities-js/scroll';
 
 const formEl = document.querySelector('#search-form');
 formEl.addEventListener('submit', onSearch);
@@ -37,6 +37,7 @@ function onSearch(evt) {
       alertImagesFound(data);
       clearMarkup();
       createMarkup(data);
+      scrollTo(0, 0);
 
       loadMoreBtn.classList.remove('is-hidden');
       loadMoreBtn.textContent = 'Load more';

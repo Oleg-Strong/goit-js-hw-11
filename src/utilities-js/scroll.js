@@ -1,4 +1,4 @@
-export { pageScrolling };
+export { pageScrolling, pageScrollingUP };
 const pageScrolling = () => {
   const { height: cardHeight } = document
     .querySelector('.gallery')

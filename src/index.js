@@ -7,7 +7,7 @@ import {
   alertEndOfSearch,
   alertImagesFound,
 } from './utilities-js/alert';
-import { pageScrolling, pageScrollingUP } from './utilities-js/scroll';
+import { pageScrolling } from './utilities-js/scroll';
 
 const formEl = document.querySelector('#search-form');
 formEl.addEventListener('submit', onSearch);
